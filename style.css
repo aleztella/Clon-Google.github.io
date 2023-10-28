@@ -1,0 +1,135 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{ /*enlaces*/
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    header { /*cabecera*/
+        width: 100%;
+        height: 0 px;
+    }
+
+    header nav { /*barra de navegación*/
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header nav .nav-right-section{
+        width: 250px;
+        height: auto;
+        display: flex; /*hacer elementos flexibles*/
+        list-style: none; /*quitar decoracion de lista*/
+        justify-content: center;
+        align-items: center;        
+    }
+
+    nav .nav-right-section a{ /*Espacio hacia la derecha y color negor*/
+        margin-right: 10px;
+        color: black;
+    }
+
+    #profile{
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+
+    main { 
+         margin-top: 70px;  /*Espaciado exterior de adentro*/   
+        text-align: center;
+    }
+
+    main .main-logo{
+          width:500px;
+          margin: 0 auto;
+          margin-bottom: 40px; /*Espaciado exterior de abajo*/
+    }
+
+    main .main-logo img{
+        width: 500px; /* Tamaño de la imagen*/
+    }
+
+    main .main-input{ /*Cajita del buscador*/
+        width: 530px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    main .main-input-container{ /*Cajita del buscador*/
+         width: 525px;
+         border-radius: 100px;
+         border: 1px solid rgb(127, 127, 127);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+
+    main .main-input input {
+        width: 435px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+
+    main .main-buttons{
+        width: 530px;
+        margin: 0 auto; /*Centro botones*/
+    }
+
+    main .main-buttons div{
+        display: inline-block;
+    }
+
+    main .main-buttons button{
+        height: 30px;   
+        background-color: #f2f2f2;
+        border: 0;
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 0 15px; /*Espacio interior*/
+        margin-right: 15px;
+    }
+
+    main .main-buttons button:hover{
+        border: 1px solid #c6c6c6;
+        box-shadow: 0 1px 1px #0000001;
+    }
+
+    footer {
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        font-size: 12px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #cecece;
+    }
+
+    footer ul {
+        margin: 10px;
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+    }
+
+    footer .footer-left {
+        justify-self: left;
+    }
+
+    footer .footer-right {
+        justify-self: right;
+    }
+
+    footer ul li a {
+        margin: 10px; /*Espaciado entre los enlaces*/
+        color:#525252;
+    }
